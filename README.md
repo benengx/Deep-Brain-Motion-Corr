@@ -60,7 +60,7 @@ In order to motion correct, the following steps should be taken:
     c-	Choose neurons that ‘drift together’ in a patch, and avoid neurons that ‘drift apart’. To assess that, you should cycle though the ‘template_mov.tif‘ and look at which neurons are moving together through time, and which are not.
     d-	Patches should be based on the first frame of the ‘template_mov.tif‘ file.
     e-	Only patches that are drawn will be motion corrected, so be sure each relevant neuron (or process) is inside at least one patch.
-    f-	Depending on the data, sometimes patches should be larger or smaller. Larger patches have better signal, but may include neurons or processes that do not drift together, whereas smaller patches have the opposite problem. Draw patches of different sizes initially to test which size better works for your data.
+    f-	The optimal size of the patches depends on the data. Larger patches have better signal, but may include neurons or processes that do not drift together, whereas smaller patches have the opposite problem. Draw patches of different sizes initially to test which size better works for your data.
 
 3-	After drawing the patches and saving them, run the main function again: DBMC(input_folder,output_folder,have_red_channel,use_red_channel)
 
@@ -87,8 +87,11 @@ The code was originally designed to be parallelized for running in a cluster. Gi
 The following files were obtained from freely available public repositories:
 
 localnormalize.m: Guanglei Xiong (xgl99@mails.tsinghua.edu.cn) https://www.mathworks.com/matlabcentral/fileexchange/8303-local-normalization 
+
 movingmean.m: Glen - https://www.mathworks.com/matlabcentral/fileexchange/41859-moving-average-function
+
 ReadImageJROI.m: Dylan Muir (dylan.muir@unibas.ch) ,  https://github.com/DylanMuir/ReadImageJROI/blob/master/ReadImageJROI.m
+
 saveastiff.m: YoonOh Tak - https://www.mathworks.com/matlabcentral/fileexchange/35684-multipage-tiff-stack
 
 See individual file headers for relevant copyright notices.
