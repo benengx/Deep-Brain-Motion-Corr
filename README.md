@@ -12,7 +12,7 @@ This package is provided free without any warranty; you can redistribute it and/
 
 **Overview**
 
-This code runs a motion correction algorithm designed for use on movies generated in deep-brain calcium imaging. A complete description of the algorithm is provided in the paper (Methods section and legend of Extended Data Fig. 3). Here, we provide instructions for using the code. 
+This code runs a motion correction algorithm designed for use on movies generated during deep-brain calcium imaging. A complete description of the algorithm is provided in the paper (Methods section and legend of Extended Data Fig. 3). Here, we provide instructions for using the code. 
 
 **Notes**
 
