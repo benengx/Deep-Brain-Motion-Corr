@@ -1,16 +1,13 @@
 # Deep-Brain-Motion-Corr
 Patch based method for motion correcting calcium imaging movies optimized for deep brain imaging through a GRIN lens
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Ben Engelhard, Princeton University (2019).
 
-This program is provided free without any warranty, express or implied; you can redistribute it and/or 
-modify it under the terms of the GNU General Public License version 3 as published by the Free 
-Software Foundation.
-If this code is used, please cite: B Engelhard et al. Specialized coding of sensory, motor, and   
-cognitive variables in midbrain dopamine neurons. Nature, 2019.
+This package is provided free without any warranty; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation. If this code is used, please cite: B Engelhard et al. Specialized coding of sensory, motor, and cognitive variables in midbrain dopamine neurons. Nature, 2019.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 **Overview**
