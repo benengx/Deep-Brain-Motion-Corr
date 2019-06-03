@@ -53,10 +53,10 @@ In order to motion correct, the following steps should be taken:
 
 1-	Run the main function: DBMC(input_folder,output_folder,have_red_channel,use_red_channel)
 
-2-	After the first phase of motion correction, the file ‘template_mov.tif’ (and the file ‘template_mov_green.tif‘ if using the red channel) will have been saved in the ‘output_folder’ directory. Now the user should draw patches and save them using ImageJ ROI manager (this is the only manual step of the motion correction procedure). Each patch should be a contiguous area of the ‘template_mov.tif’ movie (or the ‘template_mov_green.tif‘ if it exsits). After drawing all patches, they should be saved in a zip file (in the ‘output_folder’ directory) named ‘patches.zip’. Use the following tips for drawing the patches:
+2-	After the first phase of motion correction, the file ‘template_mov.tif’ (and the file ‘template_mov_green.tif‘ if using the red channel) will have been saved in the ‘output_folder’ directory. Now the user should draw patches and save them using ImageJ ROI manager (this is the only manual step of the motion correction procedure). Each patch should be a contiguous area of the ‘template_mov.tif’ movie (or the ‘template_mov_green.tif‘ if it exsits). After drawing all patches, they should be saved in a zip file (in the ‘output_folder’ directory) named ‘patches.zip’. **Please sort the patches ROIs before saving them** ('sort' command in ImageJ ROI manager), as the patch numbers that will be saved correspond to the alphanumeric order of the patches ROIs names in ImageJ, rather than the default number shown before sorting. Use the following tips for drawing the patches:
 
     a-	Patches are typically 80-160 pixels wide.
-    b-	Patches typically include 1-5 visible neurons.
+    b-	Patches typically include 1-5 visible neurons (for a 200-400um field of view) or 6-12 neurons (for bigger fields of view).
     c-	Choose neurons that ‘drift together’ in a patch, and avoid neurons that ‘drift apart’. To assess that, you should cycle though the ‘template_mov.tif‘ and look at which neurons are moving together through time, and which are not.
     d-	Patches should be based on the first frame of the ‘template_mov.tif‘ file.
     e-	Only patches that are drawn will be motion corrected, so be sure each relevant neuron (or process) is inside at least one patch.
