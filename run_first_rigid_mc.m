@@ -26,7 +26,7 @@ end
 for i=1:length(tiflist_full)
     stack=loadTiffStack_single(tiflist_full{i},frames_to_take);
     [total_i_vec,total_j_vec,template] = mc_rigid...
-        (stack,50,10,1,30,0,1,-1,1);
+        (stack,50,10,30,1,0,1,-1,1);
     
     XX_cell{i} = total_j_vec;
     YY_cell{i} = total_i_vec;
