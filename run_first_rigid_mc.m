@@ -41,7 +41,7 @@ saveastiff(template_file,[output_folder,'template_mov_uncor.tif']);
 %now motion correct the templates and add the shifts to the separate file shifts obtained earlier.
 
     [i_vec_templates,j_vec_templates,~,~,~,templates_stack_mc] = mc_rigid...
-        (template_file,size(template_file,3),10,30,1,0,1,-1,1);
+        (template_file,size(template_file,3),10,30,1,0,1,-1,0);
 
 for i=1:length(XX_cell)
     XX_cell{i} = XX_cell{i} + j_vec_templates(i);

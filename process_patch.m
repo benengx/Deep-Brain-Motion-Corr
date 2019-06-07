@@ -174,7 +174,7 @@ num_files_per_movie=min(floor(max_size_file/bytes_per_file),max_files_frame_limi
 est_num_movies = ceil(length(res.num_frames_file)/num_files_per_movie);
 
 mc_time_template=tic;
-[row_translation_templates,col_translation_templates] = mc_rigid(res.all_templates,1,10,20,0.2,1,1);
+[row_translation_templates,col_translation_templates] = mc_rigid(res.all_templates,1,10,20,0.2,1,1,-1,0);
 
 disp(['Calculating motion correction to templates took ',num2str(toc(mc_time_template)),' seconds']);
 
