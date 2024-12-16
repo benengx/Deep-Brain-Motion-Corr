@@ -19,7 +19,7 @@ switch frames_to_take
         inds_to_take = 1:length(InfoImage);
     case 1
         inds_to_take = 1:2:length(InfoImage);
-    case -1
+    case 2
         inds_to_take = 2:2:length(InfoImage);
 end
 
